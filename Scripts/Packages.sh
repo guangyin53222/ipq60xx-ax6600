@@ -65,8 +65,7 @@ UPDATE_PACKAGE "passwall2" "Openwrt-Passwall/openwrt-passwall2" "main" "pkg"
 UPDATE_PACKAGE "diskmanager" "4IceG/luci-app-mini-diskmanager" "main"
 UPDATE_PACKAGE "easytier" "EasyTier/luci-app-easytier" "main"
 UPDATE_PACKAGE "qmodem" "FUjr/QModem" "main"
-UPDATE_PACKAGE "viking" "VIKINGYFY/packages" "main" "" "axonhub  miniupnpd sing-box luci-app-homeproxy luci-app-timewol luci-app-upnp luci-app-wolplus luci-app-wolultra"
-
+UPDATE_PACKAGE "viking" "VIKINGYFY/packages" "main" "" "axonhub gecoosac miniupnpd sing-box luci-app-homeproxy luci-app-timewol luci-app-upnp luci-app-wolplus luci-app-wolultra"
 UPDATE_PACKAGE "diskman" "sbwml/luci-app-diskman" "main"
 UPDATE_PACKAGE "mosdns" "sbwml/luci-app-mosdns" "v5" "" "v2dat"
 UPDATE_PACKAGE "openlist2" "sbwml/luci-app-openlist2" "main"
@@ -95,7 +94,7 @@ UPDATE_PACKAGE "open-app-filter" "destan19/OpenAppFilter" "master" "" "open-app-
 # 文件管理：Harbor File（单包仓库，直接克隆）
 UPDATE_PACKAGE "luci-app-harbor-file" "destan19/luci-app-harbor-file" "master"
 # 集客 AC 控制器（含主程序 gecoosac + 界面 luci-app-gecoosac）
-UPDATE_PACKAGE "gecoosac" "laipeng668/luci-app-gecoosac" "main" "" "gecoosac luci-app-gecoosac"
+# UPDATE_PACKAGE "gecoosac" "laipeng668/luci-app-gecoosac" "main" "" "gecoosac luci-app-gecoosac"
 # linkease + istore软件中心
 UPDATE_PACKAGE "linkease" "linkease/nas-packages" "master"
 UPDATE_PACKAGE "luci-app-linkease" "linkease/nas-packages-luci" "main"
