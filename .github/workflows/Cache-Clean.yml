@@ -1,0 +1,33 @@
+# SPDX-License-Identifier: MIT
+# Copyright (C) 2026 VIKINGYFY
+
+name: Cache-Clean
+
+on:
+  # 每周日 UTC 20:00 = 北京时间周一 04:00
+  schedule:
+    - cron: 0 20 * * 0
+  # 手动触发
+  workflow_dispatch:
+
+permissions:
+  actions: write
+  contents: read
+
+jobs:
+  cleanup:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Projects
+        uses: actions/checkout@main
+
+      - name: Cache Clean
+        env:
+          GH_TOKEN: ${{secrets.PAT}}
+        run: |
+          echo "Cleaning up all caches..."
+          if gh cache delete --all 2>/dev/null; then
+            echo "All caches deleted."
+          else
+            echo "No caches found or delete not permitted (need PAT with repo scope)."
+          fi
