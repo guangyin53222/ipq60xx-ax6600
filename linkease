@@ -1,0 +1,7 @@
+
+config linkease
+	option port '8897'
+	option enabled '1'
+	option allowPublic '0'
+	option preconfig 'v0L0YIrao4aOePHFbNIXcL27zz8n6f6q4st1xAcQqrXLM0X94M_v4elO7WkyZIKqlHhrdvWWnHfyekAINC0uF-lqt33UK362fV1UaNBQq81FPPLFpcuzR8CrGuQxtomjrV1l10eFPu0V3NY_ncsjfA'
+
